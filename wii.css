@@ -1,0 +1,957 @@
+/* =========================================================
+   WII.CSS
+   Wii-inspired HTML UI framework
+========================================================= */
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    cursor:
+        url("https://www.rw-designer.com/cursor-view/23165.png")
+        0 0,
+        auto;
+}
+
+
+/* =========================================================
+   WII BACKGROUND
+========================================================= */
+
+body {
+
+    background:
+        radial-gradient(
+            ellipse at center,
+            #ffffff 0%,
+            #f7fafc 35%,
+            #e9eef2 70%,
+            #d5dde3 100%
+        );
+
+}
+
+
+/* =========================================================
+   WII SCREEN
+========================================================= */
+
+.wii-screen {
+
+    position: relative;
+
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(
+            ellipse at center,
+            rgba(255,255,255,1) 0%,
+            rgba(250,252,253,1) 45%,
+            rgba(225,232,237,1) 100%
+        );
+
+}
+
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.wii-top {
+
+    height: 64px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding:
+        0 35px;
+
+    color: #777;
+
+    border-bottom:
+        1px solid #c8d0d5;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #ffffff 0%,
+            #f7f9fa 50%,
+            #e5eaee 100%
+        );
+
+    box-shadow:
+        0 2px 5px rgba(0,0,0,0.08);
+
+}
+
+
+/* Wii Menu text */
+
+.wii-top-left {
+
+    font-size: 25px;
+
+    font-weight: 300;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* Clock */
+
+.wii-top-right {
+
+    display: flex;
+
+    gap: 18px;
+
+    font-size: 18px;
+
+    color: #777;
+
+}
+
+
+/* =========================================================
+   MAIN WII MENU
+========================================================= */
+
+.wii-menu {
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    top: 64px;
+    bottom: 92px;
+
+    padding:
+        35px 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+/* =========================================================
+   CHANNEL GRID
+========================================================= */
+
+.wii-channel-grid {
+
+    width: min(
+        1200px,
+        92vw
+    );
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    grid-template-rows:
+        repeat(2, 1fr);
+
+    gap: 20px;
+
+}
+
+
+/* =========================================================
+   WII CHANNEL
+========================================================= */
+
+.wii-channel {
+
+    position: relative;
+
+    height: 190px;
+
+    padding: 0;
+
+    overflow: hidden;
+
+    border-radius: 13px;
+
+    border:
+        2px solid #c7d0d6;
+
+    background:
+
+        linear-gradient(
+            to bottom,
+            #ffffff 0%,
+            #f9fbfc 45%,
+            #e8edf0 100%
+        );
+
+    box-shadow:
+
+        0 3px 8px
+        rgba(0,0,0,0.13),
+
+        inset 0 1px 0
+        #ffffff;
+
+    color: #777;
+
+    cursor:
+        url("https://www.rw-designer.com/cursor-view/23165.png")
+        0 0,
+        pointer;
+
+    transition:
+
+        transform 0.12s ease,
+
+        border-color 0.15s ease,
+
+        box-shadow 0.15s ease;
+
+}
+
+
+/* Wii channel hover */
+
+.wii-channel:hover {
+
+    transform:
+        scale(1.025);
+
+    border-color:
+        #4bb9e9;
+
+    box-shadow:
+
+        0 0 4px
+        rgba(58,185,231,0.8),
+
+        0 0 12px
+        rgba(58,185,231,0.45),
+
+        inset 0 1px 0
+        #ffffff;
+
+}
+
+
+/* Wii channel click */
+
+.wii-channel:active {
+
+    transform:
+        scale(0.985);
+
+    box-shadow:
+
+        inset
+        0 3px 8px
+        rgba(0,0,0,0.16);
+
+}
+
+
+/* =========================================================
+   CHANNEL IMAGE
+========================================================= */
+
+.channel-image {
+
+    position: absolute;
+
+    left: 10px;
+    right: 10px;
+
+    top: 10px;
+    bottom: 45px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    background:
+
+        radial-gradient(
+            ellipse,
+            #ffffff,
+            #eef3f6
+        );
+
+}
+
+
+/* Channel artwork */
+
+.channel-image img {
+
+    max-width: 85%;
+
+    max-height: 85%;
+
+    object-fit: contain;
+
+    pointer-events: none;
+
+}
+
+
+/* =========================================================
+   CHANNEL TITLE
+========================================================= */
+
+.channel-title {
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    bottom: 10px;
+
+    text-align: center;
+
+    font-size: 16px;
+
+    color: #666;
+
+    text-shadow:
+        0 1px 0 #ffffff;
+
+}
+
+
+/* =========================================================
+   EMPTY CHANNEL
+========================================================= */
+
+.wii-empty {
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.empty-channel-animation {
+
+    width: 85px;
+    height: 85px;
+
+    border-radius: 50%;
+
+    position: relative;
+
+    animation:
+        emptySpin 3s linear infinite;
+
+}
+
+
+.empty-channel-animation span {
+
+    position: absolute;
+
+    width: 13px;
+    height: 13px;
+
+    border-radius: 50%;
+
+    background: #d5dde2;
+
+}
+
+
+.empty-channel-animation span:nth-child(1) {
+
+    left: 36px;
+    top: 0;
+
+}
+
+
+.empty-channel-animation span:nth-child(2) {
+
+    left: 10px;
+    top: 50px;
+
+}
+
+
+.empty-channel-animation span:nth-child(3) {
+
+    right: 10px;
+    top: 50px;
+
+}
+
+
+@keyframes emptySpin {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* =========================================================
+   SETTINGS CHANNEL
+========================================================= */
+
+.wii-settings-channel {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.settings-icon {
+
+    font-size: 65px;
+
+    color: #9ba6ad;
+
+    text-shadow:
+        0 2px 0 white;
+
+}
+
+
+/* =========================================================
+   WII FOOTER
+========================================================= */
+
+.wii-footer {
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 92px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding:
+        0 35px;
+
+    border-top:
+        1px solid #c4ccd2;
+
+    background:
+
+        linear-gradient(
+            to bottom,
+            #f9fbfc,
+            #e1e7eb
+        );
+
+    box-shadow:
+        0 -2px 7px
+        rgba(0,0,0,0.08);
+
+}
+
+
+/* =========================================================
+   FOOTER ARROWS
+========================================================= */
+
+.wii-footer-button {
+
+    width: 72px;
+    height: 48px;
+
+    border-radius: 24px;
+
+    border:
+        1px solid #b9c3c9;
+
+    background:
+
+        linear-gradient(
+            #ffffff,
+            #e0e6ea
+        );
+
+    color: #7f8b91;
+
+    font-size: 27px;
+
+    cursor:
+        url("https://www.rw-designer.com/cursor-view/23165.png")
+        0 0,
+        pointer;
+
+    box-shadow:
+
+        0 2px 4px
+        rgba(0,0,0,0.15),
+
+        inset 0 1px 0
+        #ffffff;
+
+}
+
+
+.wii-footer-button:hover {
+
+    border-color:
+        #4dbce9;
+
+    color:
+        #43aeda;
+
+    box-shadow:
+
+        0 0 8px
+        rgba(63,185,232,0.45);
+
+}
+
+
+.wii-footer-button:active {
+
+    transform:
+        scale(0.95);
+
+}
+
+
+/* =========================================================
+   WII BUTTON
+========================================================= */
+
+.wii-button {
+
+    min-width: 130px;
+
+    height: 48px;
+
+    padding:
+        0 25px;
+
+    border-radius: 25px;
+
+    border:
+        1px solid #aeb9bf;
+
+    background:
+
+        linear-gradient(
+            #ffffff,
+            #dce3e7
+        );
+
+    color: #69757b;
+
+    font-size: 18px;
+
+    box-shadow:
+
+        0 2px 4px
+        rgba(0,0,0,0.15),
+
+        inset 0 1px 0
+        #ffffff;
+
+    cursor:
+        url("https://www.rw-designer.com/cursor-view/23165.png")
+        0 0,
+        pointer;
+
+}
+
+
+.wii-button:hover {
+
+    border-color:
+        #44b9e9;
+
+    color:
+        #40a8d4;
+
+    box-shadow:
+
+        0 0 10px
+        rgba(54,185,235,0.55);
+
+}
+
+
+/* =========================================================
+   CENTER WII BUTTON
+========================================================= */
+
+.wii-wii-button {
+
+    width: 110px;
+
+    height: 54px;
+
+    border-radius: 28px;
+
+    border:
+        1px solid #b7c1c7;
+
+    background:
+
+        linear-gradient(
+            #ffffff,
+            #e3e9ed
+        );
+
+    color: #8b959b;
+
+    font-size: 22px;
+
+    font-weight: 300;
+
+    box-shadow:
+
+        0 3px 6px
+        rgba(0,0,0,0.15);
+
+    cursor:
+        url("https://www.rw-designer.com/cursor-view/23165.png")
+        0 0,
+        pointer;
+
+}
+
+
+.wii-wii-button:hover {
+
+    border-color:
+        #4bbce9;
+
+    box-shadow:
+
+        0 0 12px
+        rgba(59,186,234,0.5);
+
+}
+
+
+/* =========================================================
+   WII DIALOG OVERLAY
+========================================================= */
+
+.wii-dialog-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background:
+        rgba(255,255,255,0.45);
+
+    backdrop-filter:
+        blur(3px);
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.18s ease;
+
+    z-index: 1000;
+
+}
+
+
+.wii-dialog-overlay.show {
+
+    opacity: 1;
+
+    pointer-events: auto;
+
+}
+
+
+/* =========================================================
+   WII DIALOG
+========================================================= */
+
+.wii-dialog {
+
+    width: min(
+        520px,
+        85vw
+    );
+
+    min-height: 240px;
+
+    border-radius: 14px;
+
+    border:
+        2px solid #c1cbd1;
+
+    background:
+
+        linear-gradient(
+            #ffffff,
+            #edf2f5
+        );
+
+    box-shadow:
+
+        0 8px 35px
+        rgba(0,0,0,0.28),
+
+        inset 0 1px 0
+        #ffffff;
+
+    transform:
+        scale(0.85);
+
+    transition:
+        transform 0.18s ease;
+
+}
+
+
+.wii-dialog-overlay.show
+.wii-dialog {
+
+    transform:
+        scale(1);
+
+}
+
+
+/* =========================================================
+   DIALOG TITLE
+========================================================= */
+
+.wii-dialog-title {
+
+    height: 54px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-bottom:
+        1px solid #c8d0d5;
+
+    color: #707b82;
+
+    font-size: 21px;
+
+    background:
+
+        linear-gradient(
+            #ffffff,
+            #e9eef1
+        );
+
+}
+
+
+/* =========================================================
+   DIALOG CONTENT
+========================================================= */
+
+.wii-dialog-content {
+
+    min-height: 115px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 25px;
+
+    color: #68737a;
+
+    font-size: 18px;
+
+}
+
+
+.wii-dialog-icon {
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            #66c6eb,
+            #319fcf
+        );
+
+    color: white;
+
+    font-size: 28px;
+
+    box-shadow:
+
+        0 2px 5px
+        rgba(0,0,0,0.18);
+
+}
+
+
+/* =========================================================
+   DIALOG BUTTON AREA
+========================================================= */
+
+.wii-dialog-buttons {
+
+    height: 70px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-top:
+        1px solid #d0d7db;
+
+    background:
+        rgba(255,255,255,0.55);
+
+}
+
+
+/* =========================================================
+   RESPONSIVE WII MENU
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .wii-channel-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        grid-template-rows:
+            repeat(4, 1fr);
+
+        gap: 12px;
+
+    }
+
+    .wii-channel {
+
+        height: 145px;
+
+    }
+
+    .channel-title {
+
+        font-size: 13px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .wii-top {
+
+        padding:
+            0 15px;
+
+    }
+
+    .wii-top-right {
+
+        font-size: 13px;
+
+    }
+
+    .wii-menu {
+
+        padding:
+            15px;
+
+    }
+
+    .wii-channel {
+
+        height: 120px;
+
+    }
+
+    .wii-footer {
+
+        padding:
+            0 12px;
+
+    }
+
+}
