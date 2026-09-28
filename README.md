@@ -294,15 +294,7 @@ No license created. if you want to be a contributor on github, Ask our guestbook
 
 Contributions are welcome by accessing our guestbook!
 
-You can contribute by:
-
-1. Forking the repository.
-2. Creating a new branch.
-3. Adding or improving Wii-style UI components.
-4. Testing your changes.
-5. Opening a pull request.
-
-Enter here: https://iansoftware.atabook.org/
+You can contribute by signing our guestbook: https://iansoftware.atabook.org/
 
 ## 💡 Ideas
 
