@@ -290,7 +290,7 @@ This project is intended as a web-development recreation/inspiration project.
 
 You can choose and add a license for your repository, such as the MIT License.
 
-If using third-party images, GIFs, or cursor artwork, check their individual licenses and attribution requirements before redistributing them.
+No license created. if you’re an part of us on github, Ask our guestbook: https://iansoftware.atabook.org/
 
 ## ⭐ Contributing
 
