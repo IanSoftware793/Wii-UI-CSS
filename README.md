@@ -292,7 +292,7 @@ No license created. if you want to be a contributor on github, Ask our guestbook
 
 ## ⭐ Contributing
 
-Contributions are welcome!
+Contributions are welcome by accessing our guestbook!
 
 You can contribute by:
 
@@ -301,6 +301,8 @@ You can contribute by:
 3. Adding or improving Wii-style UI components.
 4. Testing your changes.
 5. Opening a pull request.
+
+Enter here: https://iansoftware.atabook.org/
 
 ## 💡 Ideas
 
