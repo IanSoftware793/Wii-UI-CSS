@@ -29,24 +29,6 @@ Wii-UI-CSS/
 └── README.md
 ```
 
-## 🚀 Getting Started
-
-Download or clone the repository:
-
-```bash
-git clone https://github.com/YOUR-USERNAME/Wii-UI-CSS.git
-```
-
-Then open:
-
-```text
-index.html
-```
-
-in your web browser.
-
-No build tools or installation are required.
-
 ## 🎮 Creating a Wii Channel
 
 Add a channel to your HTML:
