@@ -1,8 +1,4 @@
 # Wii UI CSS
-<a href="https://ian-software.neocities.org/CSS/Wii/wii.css">
-  <img src="[https://img.shields.io/github/package-json/v/virtualvivek/windows-ui?style=flat-square&color=CB3837&logo=npm&logoColor=ffffff&label=npm](https://ian-software.neocities.org/images/GitHub%20Minzipped%20Size.png)"
-    alt="minzippedsize" />
-</a
 
 A Wii-inspired HTML/CSS UI framework for creating web interfaces with the look and feel of the Nintendo Wii Menu.
 
