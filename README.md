@@ -22,7 +22,7 @@ A Wii-inspired HTML/CSS UI framework for creating web interfaces with the look a
 ## ⚙️ Set-up
 
 ```html
-https://ian-software.neocities.org/CSS/Wii/wii.css
+<link rel="stylesheet" href="https://ian-software.neocities.org/CSS/Wii/wii.css">
 ```
 
 ## 📁 Project Structure
