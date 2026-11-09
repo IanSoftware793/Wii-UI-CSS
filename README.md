@@ -19,12 +19,6 @@ A Wii-inspired HTML/CSS UI framework for creating web interfaces with the look a
 * ⚡ No CSS framework required
 * 🔧 Easy to customize
 
-## ⚙️ Set-up
-
-```html
-<link rel="stylesheet" href="https://ian-software.neocities.org/CSS/Wii/wii.css">
-```
-
 ## 📁 Project Structure
 
 ```text
@@ -33,6 +27,12 @@ Wii-UI-CSS/
 ├── index.html
 ├── wii.css
 └── README.md
+```
+
+## ⚙️ Set-up
+
+```html
+<link rel="stylesheet" href="https://ian-software.neocities.org/CSS/Wii/wii.css">
 ```
 
 ## 🎮 Creating a Wii Channel
